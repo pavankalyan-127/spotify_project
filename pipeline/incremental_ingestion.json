@@ -5,8 +5,6 @@
 			{
 				"name": "sqltodatalake",
 				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "lookup",
@@ -33,7 +31,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "select * from  @{pipeline().parameters.schema}.@{pipeline().parameters.table} WHERE @{pipeline().parameters.cdc_col} >@'{activity('Lookup1').output.value[0].cdc_timestamp}'",
+							"value": "SELECT * FROM  @{pipeline().parameters.schema}.@{pipeline().parameters.table} WHERE @{pipeline().parameters.cdc_col} >@'{activity('Lookup1').output.value[0].cdc_timestamp}'",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
