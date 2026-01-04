@@ -1,0 +1,9 @@
+{
+	"name": "pavanadfprojectt",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0a1367e5-516e-4bfa-b295-35cca1d8d3b9",
+		"tenantId": "eb2eb96b-a651-4dbe-b904-637d8413a15a"
+	}
+}

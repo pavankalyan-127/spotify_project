@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimeADF",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
